@@ -11,7 +11,18 @@
 
 
 def my_rotate!(array, amt)
-
+    if amt > 0    
+        amt.times do 
+           ele = array.shift # removes the first element and returns it to the ele variable
+           array << ele # shovels ele into the end of the array
+        end
+    else 
+        (-amt).times do
+            ele = array.pop # removes last element of the array and returns it 
+            array.unshift(ele) # insert ele to the front
+        end
+    end
+    array
 end
 
 
