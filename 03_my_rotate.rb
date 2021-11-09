@@ -35,7 +35,7 @@ p result_1.object_id                # => 70354216023780
 
 array_2 = ["NOMAD", "SOHO", "TRIBECA"]
 p array_2.object_id                 # => 70354216019660
-result_2 = my_rotate!(array_2, 1)
+result_2 = my_rotate!(array_2, 1)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
 p result_2                          # => ["SOHO", "TRIBECA", "NOMAD"]
 p result_2.object_id                # => 70354216019660
 
